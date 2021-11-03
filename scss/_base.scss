@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  // height: 100vh;
+}
+
+body {
+  background-color: var(--bg-beige);
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+:root {
+  --bg-beige: hsl(24, 93%, 95%);
+  --primary-orange: hsl(18, 86%, 54%);
+  --accent-green: hsl(166, 100%, 28%);
+  --icon-yellow: hsl(49, 100%, 50%);
+  --accent-red: hsl(345, 100%, 49%);
+  --book-cover-width: 13.5rem;
+  --book-cover-height: 18.9rem;
+  --red-border: 4px solid hsl(345, 100%, 49%);
+  --book-bg-border-radius: 1.5rem;
+  --book-bg-width: 32.4rem;
+}
