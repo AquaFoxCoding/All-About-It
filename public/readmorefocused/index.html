@@ -4,58 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All About It - Books</title>
-    <link rel="stylesheet" href="scss/main.css" />
+    <title>All About it - Books</title>
+    <link href="/sass/main.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="dropdown hidden">
-      <img src="img/Menu.svg" alt="Menu Icon" class="menu-icon" />
-      <ul class="dropdown__list">
-        <li class="dropdown__books active">
-          <a href="books.html">
-            Books <img src="img/Books Icon.svg" alt="Book icon"
-          /></a>
-        </li>
-        <li class="dropdown__about">
-          <a href="about.html">
-            About <img src="img/About Icon.svg" alt="About icon"
-          /></a>
-        </li>
-        <li class="dropdown__blog">
-          <a href="blog.html">
-            Blog <img src="img/Blog Icon.svg" alt="Blog icon"
-          /></a>
-        </li>
-        <li class="dropdown__contact">
-          <a href="contact.html">
-            Contact <img src="img/Contact Icon.svg" alt="Contact icon"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-
     <nav class="mobile-nav">
-      <img src="img/Menu.svg" alt="Menu Icon" class="main-menu-icon" />
+      <img src="/img/Menu.svg" alt="Menu Icon" class="main-menu-icon" />
       <img
-        src="img/All about it logo 1.svg"
+        src="/img/All about it logo 1.svg"
         alt="All about it logo"
         class="mobile-logo"
       />
       <div></div>
     </nav>
 
+    <nav class="dropdown hidden">
+      <img src="../img/Menu.svg" alt="Menu Icon" class="menu-icon" />
+      <ul class="dropdown__list">
+        <li class="dropdown__books">
+          <a href="../index.html">
+            Books <img src="../img/Books Icon.svg" alt="Book icon"
+          /></a>
+        </li>
+        <li class="dropdown__about">
+          <a href="../about/index.html">
+            About <img src="../img/About Icon.svg" alt="About icon"
+          /></a>
+        </li>
+        <li class="dropdown__blog active">
+          <a href="../blog/index.html">
+            Blog <img src="../img/Blog Icon.svg" alt="Blog icon"
+          /></a>
+        </li>
+        <li class="dropdown__contact">
+          <a href="../contact/index.html">
+            Contact <img src="../img/Contact Icon.svg" alt="Contact icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
     <nav class="desktop-nav">
-      <img src="img/All about it logo 1.svg" alt="All about it logo" />
+      <img src="../img/All about it logo 1.svg" alt="All about it logo" />
       <ul class="desktop-nav__list">
-        <li class="desktop-nav__books active"><a href="books.html">Books</a></li>
-        <li class="desktop-nav__about"><a href="about.html">About</a></li>
-        <li class="desktop-nav__blog"><a href="blog.html">Blog</a></li>
-        <li class="desktop-nav__contact"><a href="contact.html">Contact</a></li>
+        <li class="desktop-nav__books active">
+          <a href="../index.html">Books</a>
+        </li>
+        <li class="desktop-nav__about">
+          <a href="../about/index.html">About</a>
+        </li>
+        <li class="desktop-nav__blog">
+          <a href="../blog/index.html">Blog</a>
+        </li>
+        <li class="desktop-nav__contact">
+          <a href="../contact/index.html">Contact</a>
+        </li>
       </ul>
     </nav>
     <div class="read-more-focused">
-      <a href="books.html"
-        ><img src="img/Back Arrow.svg" alt="Back button" class="back-arrow"
+      <a href="../index.html"
+        ><img src="../img/Back Arrow.svg" alt="Back button" class="back-arrow"
       /></a>
       <div class="read-more-focused__container">
         <div class="read-more-focused__header">
@@ -112,39 +120,42 @@
           <p>And much more!</p>
         </div>
       </div>
-      <button><a href="#">Buy Now</a></button>
+      <button><a href="#">Coming Soon</a></button>
     </div>
+    <div class="overlay hidden"></div>
+    <script src="../script.js"></script>
 
     <footer class="mobile-footer">
-      <img src="img/All about it logo 1.svg" alt="All about it logo" />
+      <img src="/img/All about it logo 1.svg" alt="All about it logo" />
     </footer>
+
     <footer class="desktop-footer">
       <ul>
         <a href="mailto:marketing@allaboutitpublishing.com">
           <li>
             <img
-              src="img/Email icon.svg"
+              src="/img/Email icon.svg"
               alt="Email icon"
             />marketing@allaboutitpublishing.com
           </li>
         </a>
         <a href="tel:(832) 246 4303">
-          <li><img src="img/Phone Icon.svg" alt="phone icon" />(832) 246 4303</li>
+          <li>
+            <img src="/img/Phone Icon.svg" alt="phone icon" />(832) 246 4303
+          </li>
         </a>
         <a href="https://www.facebook.com/groups/allaboutsuccessnowinnercircle">
           <li>
-            <img src="img/Facebook icon.svg" alt="facebook icon" />Facebook Group
+            <img src="/img/Facebook icon.svg" alt="facebook icon" />Facebook
+            Group
           </li>
         </a>
       </ul>
       <img
-        src="img/All about it logo 1.svg"
+        src="/img/All about it logo 1.svg"
         alt="All about it logo"
         class="desktop-logo"
       />
     </footer>
-    <div class="overlay hidden"></div>
-    <script src="../script.js"></script>
-  </body>
   </body>
 </html>

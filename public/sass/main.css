@@ -1917,7 +1917,7 @@ body {
   margin-top: 5rem;
 }
 
-.blog-container .post-1 {
+.blog-container li {
   background-color: var(--primary-orange);
   margin-top: 3rem;
   width: 30rem;
@@ -1935,25 +1935,25 @@ body {
           align-items: center;
 }
 
-.blog-container .post-1 h2 {
+.blog-container li h2 {
   margin: 2rem;
   font-size: 2rem;
   text-align: center;
 }
 
-.blog-container .post-1 img {
+.blog-container li img {
   width: 22rem;
   height: 13.4rem;
   border-radius: 0.9rem;
 }
 
-.blog-container .post-1 p {
+.blog-container li p {
   font-size: 1.5rem;
   margin: 2rem;
   text-align: center;
 }
 
-.blog-container .post-1 button {
+.blog-container li button {
   background-color: var(--accent-green);
   border: none;
   color: white;
@@ -1967,17 +1967,17 @@ body {
           filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.15));
 }
 
-.blog-container .post-1 button:hover {
+.blog-container li button:hover {
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.blog-container .post-1 button:active {
+.blog-container li button:active {
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
 }
 
-.blog-container .post-1__date {
+.blog-container li .post-date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1986,7 +1986,7 @@ body {
   margin: 2rem;
 }
 
-.blog-container .post-1__date img {
+.blog-container li .post-date img {
   margin-right: 0.5rem;
   width: 1.6rem;
   height: 1.4rem;
@@ -1994,7 +1994,7 @@ body {
 
 .blog-post-container {
   background-color: var(--primary-orange);
-  width: 35rem;
+  width: 80%;
   margin: 5rem auto;
   padding: 3rem;
   color: white;
@@ -2034,9 +2034,9 @@ body {
 }
 
 .blog-post-container .arrow-header img {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
 }
@@ -2056,8 +2056,21 @@ body {
   height: 2.5rem;
 }
 
+.blog-post-container .blog-post-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .blog-post-container .blog-post-content img {
-  width: 30rem;
+  width: 25rem;
   height: 18rem;
   margin: 3rem 0;
   border-radius: 0.5rem;
@@ -2101,36 +2114,32 @@ body {
     height: 8rem;
     font-size: 3rem;
   }
-  .blog-container .post-1 {
+  .blog-container li {
     width: 40rem;
   }
-  .blog-container .post-1 h2 {
+  .blog-container li h2 {
     font-size: 3rem;
   }
-  .blog-container .post-1 button {
+  .blog-container li button {
     width: 18.3rem;
     height: 5.3rem;
     font-size: 2rem;
   }
-  .blog-container .post-1__date {
+  .blog-container li .post-date {
     font-size: 1.2rem;
   }
-  .blog-container .post-1__date img {
+  .blog-container li .post-date img {
     width: 2rem;
     height: 2rem;
     border-radius: 0.5rem;
     -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
   }
-  .blog-post-container {
-    width: 50rem;
-  }
   .blog-post-container .arrow-header h1 {
     font-size: 2.5rem;
   }
   .blog-post-container .arrow-header img {
-    margin-right: -2rem;
-    margin-left: 1rem;
+    margin: auto;
     width: 3rem;
     height: 3rem;
   }
@@ -2187,7 +2196,7 @@ body {
     margin: 5rem auto auto;
     font-size: 3rem;
   }
-  .desktop-blog-container .post-1 {
+  .desktop-blog-container li {
     width: 78rem;
     height: 55.9rem;
     border-radius: 0.9rem;
@@ -2201,7 +2210,7 @@ body {
             align-items: center;
     margin: 6rem auto;
   }
-  .desktop-blog-container .post-1 .content {
+  .desktop-blog-container li .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2214,14 +2223,14 @@ body {
             align-items: center;
     margin-right: 5rem;
   }
-  .desktop-blog-container .post-1 .content h2 {
+  .desktop-blog-container li .content h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
   }
-  .desktop-blog-container .post-1 .content p {
+  .desktop-blog-container li .content p {
     font-size: 1.5rem;
   }
-  .desktop-blog-container .post-1 .content button {
+  .desktop-blog-container li .content button {
     margin-top: 2rem;
     background-color: var(--accent-green);
     border: none;
@@ -2235,27 +2244,27 @@ body {
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.15));
   }
-  .desktop-blog-container .post-1 .content button:hover {
+  .desktop-blog-container li .content button:hover {
     -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
   }
-  .desktop-blog-container .post-1 .content button:active {
+  .desktop-blog-container li .content button:active {
     -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
   }
-  .desktop-blog-container .post-1__date {
+  .desktop-blog-container li .post-date {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 1.5rem;
     margin: 10rem auto auto 5rem;
   }
-  .desktop-blog-container .post-1__date .clock-icon {
+  .desktop-blog-container li .post-date .clock-icon {
     margin-right: 1rem;
     width: 2rem;
     height: 2rem;
   }
-  .desktop-blog-container .post-1 .img-date .blog-img {
+  .desktop-blog-container li .img-date .blog-img {
     width: 39rem;
     height: 25rem;
     margin: 5rem 5rem 0 5rem;
@@ -2270,23 +2279,19 @@ body {
     font-size: 4rem;
     width: 55.3rem;
   }
-  .desktop-blog-container .post-1 {
+  .desktop-blog-container li {
     width: 98rem;
   }
-  .desktop-blog-container .post-1 .content h2 {
+  .desktop-blog-container li .content h2 {
     font-size: 4rem;
     text-align: ledt;
   }
-  .desktop-blog-container .post-1 .content p {
+  .desktop-blog-container li .content p {
     font-size: 2rem;
   }
-  .desktop-blog-container .post-1 .img-date .blog-img {
+  .desktop-blog-container li .img-date .blog-img {
     width: 40rem;
     height: 25rem;
-  }
-  .blog-post-container {
-    width: 129.9rem;
-    height: 162.4rem;
   }
   .blog-post-container .arrow-header {
     margin: 2rem 0;

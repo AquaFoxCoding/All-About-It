@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All About It - Blog</title>
-    <link rel="stylesheet" href="scss/main.css" />
+    <title>All About It - Books</title>
+    <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
     <nav class="dropdown hidden">
       <img src="img/Menu.svg" alt="Menu Icon" class="menu-icon" />
       <ul class="dropdown__list">
-        <li class="dropdown__books">
+        <li class="dropdown__books active">
           <a href="books.html">
             Books <img src="img/Books Icon.svg" alt="Book icon"
           /></a>
@@ -21,7 +21,7 @@
             About <img src="img/About Icon.svg" alt="About icon"
           /></a>
         </li>
-        <li class="dropdown__blog active">
+        <li class="dropdown__blog">
           <a href="blog.html">
             Blog <img src="img/Blog Icon.svg" alt="Blog icon"
           /></a>
@@ -47,59 +47,65 @@
     <nav class="desktop-nav">
       <img src="img/All about it logo 1.svg" alt="All about it logo" />
       <ul class="desktop-nav__list">
-        <li class="desktop-nav__books"><a href="books.html">Books</a></li>
+        <li class="desktop-nav__books active"><a href="books.html">Books</a></li>
         <li class="desktop-nav__about"><a href="about.html">About</a></li>
-        <li class="desktop-nav__blog active"><a href="blog.html">Blog</a></li>
+        <li class="desktop-nav__blog"><a href="blog.html">Blog</a></li>
         <li class="desktop-nav__contact"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="blog-container">
-      <h1>Advice/News</h1>
-
-      <div class="post-1">
-        <h2>Tips to Power Up Your Productivity</h2>
-        <img src="img/Blog post 1.jpeg" alt="" />
-        <p>
-          Increased productivity is at the heart of what drives all development
-          and increases in performance and profitability. A combination of
-          intelligent planning and focused efforts, productivity is something
-          that can be continuously improved...
-        </p>
-        <a href="blog-post.html"><button>Read More</button></a>
-        <div class="post-1__date">
-          <img src="img/Blog Clock icon.svg" alt="Clock icon" />
-          November 1st 2021
-        </div>
-      </div>
-    </div>
-
-    <div class="desktop-blog-container">
-      <h1>Advice/News</h1>
-
-      <div class="post-1">
-        <div class="img-date">
-          <img src="img/Blog post 1.jpeg" alt="" class="blog-img" />
-          <div class="post-1__date">
-            <img
-              src="img/Blog Clock icon.svg"
-              alt="Clock icon"
-              class="clock-icon"
-            />
-            November 1st 2021
-          </div>
-        </div>
-        <div class="content">
-          <h2>Tips to Power Up Your Productivity</h2>
+    <div class="read-more-strategies">
+      <a href="books.html"
+        ><img src="img/Back Arrow.svg" alt="Back button" class="back-arrow"
+      /></a>
+      <div class="read-more-strategies__container">
+        <div class="read-more-strategies__header">
           <p>
-            Increased productivity is at the heart of what drives all
-            development and increases in performance and profitability. A
-            combination of intelligent planning and focused efforts,
-            productivity is something that can be continuously improved...
+            Learn the art of becoming a master orator and never feel intimidated
+            by the stage again.
           </p>
-          <a href="blog-post.html"><button>Read More</button></a>
+        </div>
+        <div class="read-more-strategies__subheader">
+          <p>
+            This guide will show you some tips and strategies to get over your
+            fears and face your audience with confidence. <br />
+            <br />
+            In 7 Strategies that Highly Effective People Use When They Speak,
+            you’ll discover:
+          </p>
+        </div>
+        <ul class="read-more-strategies__list">
+          <li>
+            Practical and actionable techniques to overcome stage fright and
+            become a master orator
+          </li>
+          <li>Step-by-step guide on how to ace the art of public speaking</li>
+          <li>
+            Shocking facts about fear and anxiety – and what you can do about
+            it, based on scientific research
+          </li>
+          <li>
+            Detailed insight into Glossophobia – and some actionable tips on how
+            to tackle it
+          </li>
+          <li>
+            Comprehensive walkthrough on overcoming social anxiety in 7 easy
+            steps
+          </li>
+          <li>
+            How to gain command over gestures, expressions and other non-verbal
+            elements of communication
+          </li>
+          <li>
+            How to hook the audience within the first few minutes of your speech
+            or presentation, and keep them intrigued until the end.
+          </li>
+        </ul>
+        <div class="read-more-strategies__left-align">
+          <p>And so much more!</p>
         </div>
       </div>
+      <button><a href="#">Buy Now</a></button>
     </div>
 
     <footer class="mobile-footer">
@@ -116,14 +122,11 @@
           </li>
         </a>
         <a href="tel:(832) 246 4303">
-          <li>
-            <img src="img/Phone Icon.svg" alt="phone icon" />(832) 246 4303
-          </li>
+          <li><img src="img/Phone Icon.svg" alt="phone icon" />(832) 246 4303</li>
         </a>
         <a href="https://www.facebook.com/groups/allaboutsuccessnowinnercircle">
           <li>
-            <img src="img/Facebook icon.svg" alt="facebook icon" />Facebook
-            Group
+            <img src="img/Facebook icon.svg" alt="facebook icon" />Facebook Group
           </li>
         </a>
       </ul>
@@ -135,5 +138,6 @@
     </footer>
     <div class="overlay hidden"></div>
     <script src="../script.js"></script>
+  </body>
   </body>
 </html>

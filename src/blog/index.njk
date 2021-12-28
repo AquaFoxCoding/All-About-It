@@ -1,0 +1,94 @@
+---
+title: All About it -Blog
+layout: 'base.njk'
+---
+
+    <nav class="dropdown hidden">
+      <img src="../img/Menu.svg" alt="Menu Icon" class="menu-icon" />
+      <ul class="dropdown__list">
+        <li class="dropdown__books">
+          <a href="../index.html">
+            Books <img src="../img/Books Icon.svg" alt="Book icon"
+          /></a>
+        </li>
+        <li class="dropdown__about">
+          <a href="../about/index.html">
+            About <img src="../img/About Icon.svg" alt="About icon"
+          /></a>
+        </li>
+        <li class="dropdown__blog active">
+          <a href="../blog/index.html">
+            Blog <img src="../img/Blog Icon.svg" alt="Blog icon"
+          /></a>
+        </li>
+        <li class="dropdown__contact">
+          <a href="../contact/index.html">
+            Contact <img src="../img/Contact Icon.svg" alt="Contact icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="desktop-nav">
+      <img src="../img/All about it logo 1.svg" alt="All about it logo" />
+      <ul class="desktop-nav__list">
+        <li class="desktop-nav__books"><a href="../index.html">Books</a></li>
+        <li class="desktop-nav__about"><a href="../about/index.html">About</a></li>
+        <li class="desktop-nav__blog active"><a href="../blog/index.html">Blog</a></li>
+        <li class="desktop-nav__contact"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+
+ 
+ <div class="blog-container">
+      <h1>Advice/News</h1>
+      <ul>
+       {%- for post in collections.post -%}
+          <li>
+            <h2> {{ post.data.title }} </h2>
+             <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" />
+          <p>
+           {{ post.data.description }}
+          </p>
+          <a href="{{ post.url }}"><button>Read More</button></a>
+          <div class="post-date">
+            <img src="../img/Blog Clock icon.svg" alt="Clock icon" />
+            {{post.data.date | postDate}}
+          </div>
+          </li>
+       {%- endfor %}
+      </ul>
+    </div>
+
+    <div class="desktop-blog-container">
+      <h1>Advice/News</h1>
+      <ul>
+        {%- for post in collections.post | reverse -%}
+        <li>
+          <div class="img-date">
+            <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="blog-img" />
+            <div class="post-date">
+              <img
+                src="../img/Blog Clock icon.svg"
+                alt="Clock icon"
+                class="clock-icon"
+              />
+              {{ post.data.date | postDate }}
+            </div>
+          </div>
+          <div class="content">
+            <h2>{{post.data.title}}</h2>
+            <p>
+              {{post.data.description}}
+            </p>
+            <a href="{{ post.url }}"><button>Read More</button></a>
+          </div>
+        </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div> 
+ <div class="overlay hidden"></div>
+    <script src="../script.js"></script>
+
+
