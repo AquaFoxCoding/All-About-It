@@ -4,7 +4,7 @@ title: Tips to Power Up Your Productivity
 author: J.R Brown
 date: 2021-11-03
 tags: post
-image: /img/Blog post 1.jpeg
+image: /img/blog/Blog post 1.jpeg
 imageAlt: Blog Image
 description: Increased productivity is at the heart of what drives all
   development and increases in performance and profitability. A
