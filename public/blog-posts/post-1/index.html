@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tips to Power Up Your Productivity</title>
     <link href="/sass/main.css" type="text/css" rel="stylesheet"/>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head> 
   <body>
 
@@ -129,5 +130,18 @@ To get this and much more- you will also get to interact with me one on one!</p>
       class="desktop-logo"
     />
     </footer>
+
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
   </body>
 </html>
