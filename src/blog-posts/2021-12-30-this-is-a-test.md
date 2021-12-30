@@ -1,15 +1,7 @@
 ---
 title: This is a test
 image: /img/blog/Blog post 1.jpeg
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-  iaculis mi a porttitor auctor. Curabitur non fringilla nisi. Aenean mattis sem
-  mattis pretium posuere. Suspendisse sed eleifend erat, at egestas arcu.
-  Quisque ornare erat ac volutpat viverra. Nam ante quam, aliquet nec arcu et,
-  hendrerit venenatis ex. Fusce auctor rutrum vehicula. Vestibulum ut malesuada
-  urna. Nam at quam vitae orci blandit blandit. Aliquam vel euismod purus.
-  Aliquam convallis lorem consectetur odio ornare, a suscipit dui efficitur. Nam
-  ullamcorper mi eget purus dignissim pulvinar. Praesent nec diam ornare,
-  pretium velit sed, consequat justo.
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
 author: Testing
 date: 2021-12-30T19:54:09.535Z
 tags:
